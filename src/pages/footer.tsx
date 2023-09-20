@@ -1,4 +1,4 @@
-import { BottomNavigation, Button, Link, Typography } from "@mui/material";
+import { BottomNavigation, Button, Typography } from "@mui/material";
 
 const Footer = () => {
   return (

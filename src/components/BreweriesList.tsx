@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import SendIcon from "@mui/icons-material/Send";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios, { AxiosError, AxiosResponse } from "axios";
 
 import Brewery from "../types/Brewery";
@@ -23,8 +23,6 @@ const BreweriesList = () => {
     );
     setvisibleBreweries(data);
   };
-
-  const navigate = useNavigate();
 
   const fetchedAll = async () => {
     const url = "https://api.openbrewerydb.org/v1/breweries";

@@ -52,7 +52,11 @@ const SingleBrewery = () => {
               <p>{brewery.phone}</p>
               <p>
                 web-site :
-                <a href={`${brewery.website_url}`} target="_blank">
+                <a
+                  href={`${brewery.website_url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {brewery.website_url}
                 </a>
               </p>
